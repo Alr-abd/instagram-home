@@ -1,0 +1,32 @@
+ [
+  {
+    "id": 1,
+    "username": "sara_john",
+    "avatar": "/Avatar/a.jpg",
+    "message": "Suggested for you"
+  },
+  {
+    "id": 2,
+    "username": "amirreza_dev",
+    "avatar": "/Avatar/b.jpg",
+    "message": "New to Instagram"
+  },
+  {
+    "id": 3,
+    "username": "mahsa_travels",
+    "avatar": "/Avatar/d.jpg",
+    "message": "Suggested for you"
+  },
+  {
+    "id": 4,
+    "username": "design_bro",
+    "avatar": "/Avatar/a.jpg",
+    "message": "Popular"
+  },
+  {
+    "id": 5,
+    "username": "niloofar.music",
+    "avatar": "/Avatar/d.jpg",
+    "message": "Followed by amir.dev"
+  }
+]

@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Lobster } from "next/font/google";
+import Sidebar from "./components/sideBar";
+
+const lobster = Lobster({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +31,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="rtl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${geistMono.variable} antialiased`}
+        style={{ fontFamily: "Yekan, sans-serif" }}
       >
-        {children}
+        <div className="flex">
+          <aside className="w-[72px] xl:min-w-[244px] border-l border-l-gray-300 h-auto px-3 pb-5 pt-2">
+            <div className="w-full h-full">
+              <Sidebar />
+            </div>
+          </aside>
+          <main className="flex-1 w-full">{children}</main>
+        </div>
       </body>
     </html>
   );

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "username": "mahsa_j",
+    "userAvatar": "/Avatar/d.jpg",
+    "hasStory": true,
+    "postedAt": "5 ساعت",
+    "posts": ["/post/a.jpg", "/post/b.jpg", "/post/d.jpg", "/post/e.jpg", "/post/b.jpg"],
+    "likes": 142,
+    "caption": "یه روز عالی تو دل طبیعت ",
+    "comments": [
+      { "id": 1, "username": "alireza_ab", "text": "عالیه 😍" },
+      { "id": 2, "username": "sara_20", "text": "کجا رفتی؟" }
+    ]
+  },
+  {
+    "id": 2,
+    "username": "amir_dev",
+    "userAvatar": "/Avatar/a.jpg",
+    "hasStory": false,
+    "postedAt": "5 روز",
+    "posts": ["/post/b.jpg"],
+    "likes": 75,
+    "caption": "ستاپ جدیدم! 💻",
+    "comments": []
+  },
+  {
+    "id": 3,
+    "username": "sara_20",
+    "userAvatar": "/Avatar/b.jpg",
+    "hasStory": true,
+    "postedAt": "3 ساعت",
+    "posts": ["/post/d.jpg"],
+    "likes": 198,
+    "caption": "سفر شمال با دوستام 😎",
+    "comments": [{ "id": 1, "username": "mahsa_j", "text": "چه جای خوشگلی!" }]
+  },
+  {
+    "id": 4,
+    "username": "reza_music",
+    "userAvatar": "/Avatar/d.jpg",
+    "hasStory": false,
+    "postedAt": "10 روز",
+    "posts": ["/post/e.jpg"],
+    "likes": 310,
+    "caption": "قطعه‌ی جدید منتشر شد 🎵",
+    "comments": [
+      { "id": 1, "username": "amir_dev", "text": "عالیه داداش" },
+      { "id": 2, "username": "sara_20", "text": "مرسی بابت موزیک خوبت" }
+    ]
+  },
+  {
+    "id": 5,
+    "username": "niloo_art",
+    "userAvatar": "/Avatar/b.jpg",
+    "hasStory": true,
+    "postedAt": "7 ساعت",
+    "posts": ["/post/b.jpg", "/post/a.jpg", "/post/e.jpg", "/post/d.jpg"],
+    "likes": 420,
+    "caption": "نقاشی جدیدم روی بوم 🎨",
+    "comments": [
+      { "id": 1, "username": "mahsa_j", "text": "واو چقدر قشنگه" },
+      { "id": 2, "username": "reza_music", "text": "استعدادی!" }
+    ]
+  }
+]
