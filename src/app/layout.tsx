@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Lobster } from "next/font/google";
 import Sidebar from "./components/sideBar";
+import Header from "./components/header";
+import MobileNav from "./components/mobileNav";
 
 const lobster = Lobster({
   subsets: ["latin"],
@@ -36,13 +38,17 @@ export default function RootLayout({
         className={` ${geistMono.variable} antialiased`}
         style={{ fontFamily: "Yekan, sans-serif" }}
       >
+        <Header />
         <div className="flex">
-          <aside className="w-[72px] xl:min-w-[244px] border-l border-l-gray-300 h-auto px-3 pb-5 pt-2">
+          <aside className="block [@media(max-width:790px)]:hidden w-[72px] xl:min-w-[244px] border-l border-l-gray-300 h-auto px-3 pb-5 pt-2">
             <div className="w-full h-full">
               <Sidebar />
             </div>
           </aside>
           <main className="flex-1 w-full">{children}</main>
+        </div>
+        <div className="mx-auto">
+          <MobileNav />
         </div>
       </body>
     </html>

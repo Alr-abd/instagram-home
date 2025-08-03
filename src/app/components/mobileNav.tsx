@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 
-export default function Sidebar() {
+export default function MobileNav() {
   const pathname = usePathname();
 
   const menuItems = [
@@ -43,74 +43,6 @@ export default function Sidebar() {
         >
           <title>صفحه اصلی</title>
           <path d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z"></path>
-        </svg>
-      ),
-    },
-    {
-      href: "/search",
-      label: "جستجو",
-      icon: (
-        <svg
-          aria-label="جستجو"
-          className="x1lliihq x1n2onr6 x5n08af"
-          fill="currentColor"
-          height="24"
-          role="img"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <title>جستجو</title>
-          <path
-            d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          ></path>
-          <line
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            x1="16.511"
-            x2="22"
-            y1="16.511"
-            y2="22"
-          ></line>
-        </svg>
-      ),
-      isActiveIcon: (
-        <svg
-          aria-label="جستجو"
-          className="x1lliihq x1n2onr6 x5n08af"
-          fill="currentColor"
-          height="24"
-          role="img"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <title>جستجو</title>
-          <path
-            d="M18.5 10.5a8 8 0 1 1-8-8 8 8 0 0 1 8 8Z"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
-          ></path>
-          <line
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
-            x1="16.511"
-            x2="21.643"
-            y1="16.511"
-            y2="21.643"
-          ></line>
         </svg>
       ),
     },
@@ -246,89 +178,6 @@ export default function Sidebar() {
       ),
     },
     {
-      href: "/messages",
-      label: "پیام ها",
-      icon: (
-        <svg
-          aria-label="مستقیم"
-          className="x1lliihq x1n2onr6 x5n08af"
-          fill="currentColor"
-          height="24"
-          role="img"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <title>مستقیم</title>
-          <line
-            fill="none"
-            stroke="currentColor"
-            stroke-linejoin="round"
-            stroke-width="2"
-            x1="22"
-            x2="9.218"
-            y1="3"
-            y2="10.083"
-          ></line>
-          <polygon
-            fill="none"
-            points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
-            stroke="currentColor"
-            stroke-linejoin="round"
-            stroke-width="2"
-          ></polygon>
-        </svg>
-      ),
-      isActiveIcon: (
-        <svg
-          aria-label="مستقیم"
-          className="x1lliihq x1n2onr6 x5n08af"
-          fill="currentColor"
-          height="24"
-          role="img"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <title>مستقیم</title>
-          <path
-            d="M22.91 2.388a.69.69 0 0 0-.597-.347l-20.625.002a.687.687 0 0 0-.482 1.178L7.26 9.16a.686.686 0 0 0 .778.128l7.612-3.657a.723.723 0 0 1 .937.248.688.688 0 0 1-.225.932l-7.144 4.52a.69.69 0 0 0-.3.743l2.102 8.692a.687.687 0 0 0 .566.518.655.655 0 0 0 .103.008.686.686 0 0 0 .59-.337L22.903 3.08a.688.688 0 0 0 .007-.692"
-            fill-rule="evenodd"
-          ></path>
-        </svg>
-      ),
-    },
-    {
-      href: "/notifications",
-      label: "اعلان ها",
-      icon: (
-        <svg
-          aria-label="اعلان‌ها"
-          className="x1lliihq x1n2onr6 x5n08af"
-          fill="currentColor"
-          height="24"
-          role="img"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <title>اعلان‌ها</title>
-          <path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path>
-        </svg>
-      ),
-      isActiveIcon: (
-        <svg
-          aria-label="اعلان‌ها"
-          className="x1lliihq x1n2onr6 x5n08af"
-          fill="currentColor"
-          height="24"
-          role="img"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <title>اعلان‌ها</title>
-          <path d="M17.075 1.987a5.852 5.852 0 0 0-5.07 2.66l-.008.012-.01-.014a5.878 5.878 0 0 0-5.062-2.658A6.719 6.719 0 0 0 .5 8.952c0 3.514 2.581 5.757 5.077 7.927.302.262.607.527.91.797l1.089.973c2.112 1.89 3.149 2.813 3.642 3.133a1.438 1.438 0 0 0 1.564 0c.472-.306 1.334-1.07 3.755-3.234l.978-.874c.314-.28.631-.555.945-.827 2.478-2.15 5.04-4.372 5.04-7.895a6.719 6.719 0 0 0-6.425-6.965Z"></path>
-        </svg>
-      ),
-    },
-    {
       href: "/create",
       label: "ایجاد",
       icon: (
@@ -419,6 +268,58 @@ export default function Sidebar() {
       ),
     },
     {
+      href: "/messages",
+      label: "پیام ها",
+      icon: (
+        <svg
+          aria-label="مستقیم"
+          className="x1lliihq x1n2onr6 x5n08af"
+          fill="currentColor"
+          height="24"
+          role="img"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <title>مستقیم</title>
+          <line
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-width="2"
+            x1="22"
+            x2="9.218"
+            y1="3"
+            y2="10.083"
+          ></line>
+          <polygon
+            fill="none"
+            points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-width="2"
+          ></polygon>
+        </svg>
+      ),
+      isActiveIcon: (
+        <svg
+          aria-label="مستقیم"
+          className="x1lliihq x1n2onr6 x5n08af"
+          fill="currentColor"
+          height="24"
+          role="img"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <title>مستقیم</title>
+          <path
+            d="M22.91 2.388a.69.69 0 0 0-.597-.347l-20.625.002a.687.687 0 0 0-.482 1.178L7.26 9.16a.686.686 0 0 0 .778.128l7.612-3.657a.723.723 0 0 1 .937.248.688.688 0 0 1-.225.932l-7.144 4.52a.69.69 0 0 0-.3.743l2.102 8.692a.687.687 0 0 0 .566.518.655.655 0 0 0 .103.008.686.686 0 0 0 .59-.337L22.903 3.08a.688.688 0 0 0 .007-.692"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+      ),
+    },
+
+    {
       href: "/dashboard",
       label: "داشبورد",
       icon: (
@@ -455,40 +356,21 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="w-full sticky top-9">
-      <span className="hidden xl:block text-[26px] font-normal font-[Lobster] text-[#262626] px-3 mb-7">
-        Instagram
-      </span>
-      <span className="xl:hidden flex justify-center mb-11">
-        <svg
-          aria-label="Instagram"
-          className="x1lliihq x1n2onr6 x5n08af"
-          fill="currentColor"
-          height="24"
-          role="img"
-          viewBox="0 0 24 24"
-          width="24"
-        >
-          <title>Instagram</title>
-          <path d="M12 2.982c2.937 0 3.285.011 4.445.064a6.087 6.087 0 0 1 2.042.379 3.408 3.408 0 0 1 1.265.823 3.408 3.408 0 0 1 .823 1.265 6.087 6.087 0 0 1 .379 2.042c.053 1.16.064 1.508.064 4.445s-.011 3.285-.064 4.445a6.087 6.087 0 0 1-.379 2.042 3.643 3.643 0 0 1-2.088 2.088 6.087 6.087 0 0 1-2.042.379c-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064a6.087 6.087 0 0 1-2.043-.379 3.408 3.408 0 0 1-1.264-.823 3.408 3.408 0 0 1-.823-1.265 6.087 6.087 0 0 1-.379-2.042c-.053-1.16-.064-1.508-.064-4.445s.011-3.285.064-4.445a6.087 6.087 0 0 1 .379-2.042 3.408 3.408 0 0 1 .823-1.265 3.408 3.408 0 0 1 1.265-.823 6.087 6.087 0 0 1 2.042-.379c1.16-.053 1.508-.064 4.445-.064M12 1c-2.987 0-3.362.013-4.535.066a8.074 8.074 0 0 0-2.67.511 5.392 5.392 0 0 0-1.949 1.27 5.392 5.392 0 0 0-1.269 1.948 8.074 8.074 0 0 0-.51 2.67C1.012 8.638 1 9.013 1 12s.013 3.362.066 4.535a8.074 8.074 0 0 0 .511 2.67 5.392 5.392 0 0 0 1.27 1.949 5.392 5.392 0 0 0 1.948 1.269 8.074 8.074 0 0 0 2.67.51C8.638 22.988 9.013 23 12 23s3.362-.013 4.535-.066a8.074 8.074 0 0 0 2.67-.511 5.625 5.625 0 0 0 3.218-3.218 8.074 8.074 0 0 0 .51-2.67C22.988 15.362 23 14.987 23 12s-.013-3.362-.066-4.535a8.074 8.074 0 0 0-.511-2.67 5.392 5.392 0 0 0-1.27-1.949 5.392 5.392 0 0 0-1.948-1.269 8.074 8.074 0 0 0-2.67-.51C15.362 1.012 14.987 1 12 1Zm0 5.351A5.649 5.649 0 1 0 17.649 12 5.649 5.649 0 0 0 12 6.351Zm0 9.316A3.667 3.667 0 1 1 15.667 12 3.667 3.667 0 0 1 12 15.667Zm5.872-10.859a1.32 1.32 0 1 0 1.32 1.32 1.32 1.32 0 0 0-1.32-1.32Z"></path>
-        </svg>
-      </span>
-      <nav>
-        <ul className="flex flex-col gap-1">
+    <div className="fixed mx-auto bottom-0 left-0 w-full bg-white border-t border-gray-200 flex justify-center py-2 px-6 [@media(min-width:790px)]:hidden">
+      <nav className="w-full">
+        <ul className="flex justify-evenly gap-5">
           {menuItems.map(({ href, label, icon, isActiveIcon }) => {
             const isActive = pathname === href;
 
             return (
-              <li
-                key={href}
-                className="hover:bg-gray-200 rounded-xl hover:transition-colors duration-200"
-              >
+              <li key={href}>
                 <Link
                   href={href}
-                  className={`w-full flex gap-4 p-3 rounded cursor-pointer
+                  className={`w-full flex gap-3 rounded cursor-pointer
                     ${isActive ? "text-black font-bold" : "hover:text-black"}
                   `}
                 >
+                  {" "}
                   {label === "نمایه" ? (
                     <Image
                       src={"/Avater.jpg"}
@@ -503,68 +385,13 @@ export default function Sidebar() {
                     isActiveIcon && (
                       <span className="w-7 h-7 text-black">{isActiveIcon}</span>
                     )
-                  )}
-                  <span className="hidden xl:block font-sans text-base ml-[6px]">
-                    {label}
-                  </span>
+                  )}{" "}
                 </Link>
               </li>
             );
           })}
         </ul>
       </nav>
-      <div className="w-full flex gap-4 p-3 rounded cursor-pointer mt-7">
-        <span className="flex justify-center">
-          <svg
-            aria-label="تنظیمات"
-            className="x1lliihq x1n2onr6 x5n08af"
-            fill="currentColor"
-            height="24"
-            role="img"
-            viewBox="0 0 24 24"
-            width="24"
-          >
-            <title>تنظیمات</title>
-            <line
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              x1="3"
-              x2="21"
-              y1="4"
-              y2="4"
-            ></line>
-            <line
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              x1="3"
-              x2="21"
-              y1="12"
-              y2="12"
-            ></line>
-            <line
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              x1="3"
-              x2="21"
-              y1="20"
-              y2="20"
-            ></line>
-          </svg>
-        </span>
-
-        <span className="hidden xl:block font-sans text-base ml-[6px]">
-          بیشتر
-        </span>
-      </div>
     </div>
   );
 }
